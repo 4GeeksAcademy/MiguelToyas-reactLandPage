@@ -93,7 +93,7 @@ const Home = () => {
 					<Card />
 				</div>
 			</div>
-			<div className="container-fluid p-0" id="footer">
+			<div className="container-fluid p-0 m-0" id="footer">
 				<Footer />
 			</div>
 		</div>
