@@ -10,21 +10,12 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
 #home {
     min-height: 100vh;
-    display: flex;
-	flex-direction: column;
+    position: relative;
 }
 
-.mainContent {
-	flex: 1;
-}
-
-.footer {
-	padding: 1rem 0;
+#footer {
+    position:absolute;
+    bottom: 0;
 }

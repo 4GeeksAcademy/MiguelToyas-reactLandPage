@@ -63,11 +63,12 @@ const Card = () => {
 
 const Footer = () => {
 	return (
-		<nav className="navbar navbar-expand-lg bg-dark p-0 footer">
-			<div className="container-fluid text-center d-block">
-				<a className="navbar-brand text-white" href="#">Navbar</a>
-			</div>
-		</nav>
+			<footer class="text-center bg-dark">
+				<div className="text-center py-2 text-white">
+					© 2021 Copyright:
+					<a className="text-reset fw-bold ms-2" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+				</div>
+			</footer>
 	)
 }
 
@@ -75,10 +76,10 @@ const Home = () => {
 	return (
 		<div className="container-fluid p-0" id="home">
 			<Navbar />
-			<div className="d-flex justify-content-center mainContent ">
+			<div className="d-flex justify-content-center">
 				<Jumbotron />
 			</div>
-			<div className="row my-5 mx-3 ">
+			<div className="row my-5 mx-3">
 				<div className="col-md-3 d-flex justify-content-center">
 					<Card />
 				</div>
@@ -92,7 +93,9 @@ const Home = () => {
 					<Card />
 				</div>
 			</div>
-			<Footer />
+			<div className="container-fluid p-0" id="footer">
+				<Footer />
+			</div>
 		</div>
 	);
 };
